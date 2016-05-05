@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f77928f3-bc5f-45e2-b744-bb2e5d3c75fa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--App View Controller-->
+        <scene sceneID="6f738c3f-ad92-459e-8442-41a9e42f1652">
+            <objects>
+                <viewController id="f77928f3-bc5f-45e2-b744-bb2e5d3c75fa" customClass="AppViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7ead54a1-9aee-44e4-ad1e-6078ea35d1c5"/>
+                        <viewControllerLayoutGuide type="bottom" id="a29314d5-fcd8-4600-93fb-b98d1de81023"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="255678a0-c72b-4652-a7e9-c7db633a0b55">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="scaleToFill" text="Label" lineBreakMode="tailTruncation" id="edd75dab-158c-439f-83ac-5c98547b5b3f">
+                                <rect key="frame" x="10" y="10" width="590" height="290"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="331a9c3f-fe54-48c9-ba07-95be0702304c">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Press me!">
+                                    <color key="titleColor" red="0.0" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnPressedCancel_helloButton:" destination="f77928f3-bc5f-45e2-b744-bb2e5d3c75fa" eventType="touchUpInside" id="7a2fb5d9-9632-43e2-84c2-2269cee28f42"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="edd75dab-158c-439f-83ac-5c98547b5b3f" firstAttribute="width" secondItem="331a9c3f-fe54-48c9-ba07-95be0702304c" secondAttribute="width" priority="500" constant="-10" id="014a4583-d902-468c-8830-a85a6b21bc07"/>
+                            <constraint firstAttribute="bottom" secondItem="331a9c3f-fe54-48c9-ba07-95be0702304c" secondAttribute="bottom" priority="900" id="12045631-6d9e-4a71-a9f0-04482ae28408"/>
+                            <constraint firstItem="edd75dab-158c-439f-83ac-5c98547b5b3f" firstAttribute="top" secondItem="255678a0-c72b-4652-a7e9-c7db633a0b55" secondAttribute="top" priority="950" constant="10" id="3f0d91d2-54ef-4fe4-8fc1-b2e84870794a"/>
+                            <constraint firstItem="edd75dab-158c-439f-83ac-5c98547b5b3f" firstAttribute="leading" secondItem="255678a0-c72b-4652-a7e9-c7db633a0b55" secondAttribute="leading" priority="950" constant="10" id="4e45d788-7b28-48b4-a80d-be2e5ad2edc0"/>
+                            <constraint firstItem="edd75dab-158c-439f-83ac-5c98547b5b3f" firstAttribute="height" secondItem="331a9c3f-fe54-48c9-ba07-95be0702304c" secondAttribute="height" priority="500" constant="-10" id="5397eb6b-f04f-44b5-b58f-e44620320179"/>
+                            <constraint firstItem="331a9c3f-fe54-48c9-ba07-95be0702304c" firstAttribute="leading" secondItem="255678a0-c72b-4652-a7e9-c7db633a0b55" secondAttribute="leading" priority="950" id="6a644b8d-2643-4ace-a49f-ad5677b70927"/>
+                            <constraint firstAttribute="trailing" secondItem="edd75dab-158c-439f-83ac-5c98547b5b3f" secondAttribute="trailing" priority="900" id="8b9e8a4c-0358-4cee-b21b-0704edc9e2ad"/>
+                            <constraint firstItem="edd75dab-158c-439f-83ac-5c98547b5b3f" firstAttribute="bottom" secondItem="331a9c3f-fe54-48c9-ba07-95be0702304c" secondAttribute="top" priority="950" id="f68b4ef2-f809-4f9a-bcc0-281d5b270c4f"/>
+                            <constraint firstAttribute="trailing" secondItem="331a9c3f-fe54-48c9-ba07-95be0702304c" secondAttribute="trailing" priority="900" id="f94e67b1-898c-45ba-9438-6b681e20c3ec"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helloButton" destination="331a9c3f-fe54-48c9-ba07-95be0702304c" id="a9fb7446-4829-4991-8e41-7ddcbee28973"/>
+                        <outlet property="statusText" destination="edd75dab-158c-439f-83ac-5c98547b5b3f" id="001f1a64-bee5-49bd-be63-aaad93e7dafc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f005f3c3-1533-4c05-9102-e24be9662da9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.33333333333334" y="395.70666666666665"/>
+        </scene>
+    </scenes>
+</document>
