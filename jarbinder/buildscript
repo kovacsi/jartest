@@ -1,0 +1,40 @@
+cd "${SRCROOT}/.."
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+java -version
+
+########################
+# Find Gradle
+########################
+function findGradle {
+	CD="$PWD"
+	while [ "$CD" != "" ]; do
+		echo "Looking for gradlew in $CD"
+		if [ -x "$CD/gradlew" ]; then
+			GRADLE_EXEC=$CD/gradlew
+			return 0
+		fi
+		CD="${CD%/*}"
+	done
+
+	DEFAULT_PATH=$(echo $PATH)
+	source ~/.bash_profile
+	export PATH=$PATH:DEFAULT_PATH
+
+	echo "Checking with 'which'"
+	GRADLE_EXEC=$(which 'gradle')
+
+	if [ "$GRADLE_EXEC" = "" ]; then
+		echo "Falling back to '/usr/local/bin/gradle'"
+		GRADLE_EXEC=/usr/local/bin/gradle
+	fi
+}
+########################
+# Execute Gradle build
+########################
+if [ -z "$MOE_GRADLE_EXTERNAL_BUILD" ]; then
+    findGradle
+
+    "$GRADLE_EXEC" --daemon moeXcodeInternal
+fi
+
