@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d4e424f8-81ee-4df1-853c-c15be0b9e5b7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="96250d19-e88a-4220-a0d2-7e69b590abe6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--App View Controller-->
-        <scene sceneID="494f52b3-ebf0-43a6-b8ad-96c65425fd27">
+        <scene sceneID="609aa87a-eaf0-4844-ae99-d45c57536d9f">
             <objects>
-                <viewController id="d4e424f8-81ee-4df1-853c-c15be0b9e5b7" customClass="AppViewController" sceneMemberID="viewController">
+                <viewController id="96250d19-e88a-4220-a0d2-7e69b590abe6" customClass="AppViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="48111b8a-0ea2-40aa-93c9-10469eaf789c"/>
-                        <viewControllerLayoutGuide type="bottom" id="306ea041-ef57-49ab-853f-68e907efec09"/>
+                        <viewControllerLayoutGuide type="top" id="56f204c0-f9a5-4e10-aa08-48be3fdd5bd0"/>
+                        <viewControllerLayoutGuide type="bottom" id="80e3cec3-e6e7-4227-90e7-07d1989ab039"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="48728254-d250-4427-8523-5d716da80257">
+                    <view key="view" contentMode="scaleToFill" id="85a40ddd-ca1e-4d59-bed1-6509c8594acc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="scaleToFill" text="Label" lineBreakMode="tailTruncation" id="b328a019-e3c0-4e18-9b6c-819d0b1e2ed9">
+                            <label opaque="NO" contentMode="scaleToFill" text="Label" lineBreakMode="tailTruncation" id="7522a8d1-a3ea-415f-a0cd-ec401f8a00a8">
                                 <rect key="frame" x="10" y="10" width="590" height="290"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9482425c-f171-4a19-87b8-fd96198fb6fa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd22480d-b2a7-4822-b637-52e7939e4968">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -31,29 +31,29 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="BtnPressedCancel_helloButton:" destination="d4e424f8-81ee-4df1-853c-c15be0b9e5b7" eventType="touchUpInside" id="f024aa4d-6bd0-4274-863b-748346638026"/>
+                                    <action selector="BtnPressedCancel_helloButton:" destination="96250d19-e88a-4220-a0d2-7e69b590abe6" eventType="touchUpInside" id="b86a8292-559c-495f-924b-f00e9ad333a1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="b328a019-e3c0-4e18-9b6c-819d0b1e2ed9" firstAttribute="width" secondItem="9482425c-f171-4a19-87b8-fd96198fb6fa" secondAttribute="width" priority="500" constant="-10" id="38be0cdc-b40c-42c3-9fc6-1b42afcef6b0"/>
-                            <constraint firstItem="b328a019-e3c0-4e18-9b6c-819d0b1e2ed9" firstAttribute="bottom" secondItem="9482425c-f171-4a19-87b8-fd96198fb6fa" secondAttribute="top" priority="950" id="44dcdfd7-a26a-4f96-a41b-814a13782223"/>
-                            <constraint firstAttribute="trailing" secondItem="9482425c-f171-4a19-87b8-fd96198fb6fa" secondAttribute="trailing" priority="900" id="4dbd124c-e114-4606-a113-e10555b2ff3c"/>
-                            <constraint firstAttribute="trailing" secondItem="b328a019-e3c0-4e18-9b6c-819d0b1e2ed9" secondAttribute="trailing" priority="900" id="94dcb4a2-56bc-48ab-ac6a-44f8b846aa36"/>
-                            <constraint firstItem="9482425c-f171-4a19-87b8-fd96198fb6fa" firstAttribute="leading" secondItem="48728254-d250-4427-8523-5d716da80257" secondAttribute="leading" priority="950" id="b84b2167-118c-42ae-a778-48d0a60c38ff"/>
-                            <constraint firstAttribute="bottom" secondItem="9482425c-f171-4a19-87b8-fd96198fb6fa" secondAttribute="bottom" priority="900" id="c905fc7f-4064-4c49-975b-174db77eb1c7"/>
-                            <constraint firstItem="b328a019-e3c0-4e18-9b6c-819d0b1e2ed9" firstAttribute="leading" secondItem="48728254-d250-4427-8523-5d716da80257" secondAttribute="leading" priority="950" constant="10" id="d4621ed1-b1e8-4121-8bcb-a4ec5fc8eb2e"/>
-                            <constraint firstItem="b328a019-e3c0-4e18-9b6c-819d0b1e2ed9" firstAttribute="top" secondItem="48728254-d250-4427-8523-5d716da80257" secondAttribute="top" priority="950" constant="10" id="dec8714e-39e2-4d99-906d-02cb7e5c6eca"/>
-                            <constraint firstItem="b328a019-e3c0-4e18-9b6c-819d0b1e2ed9" firstAttribute="height" secondItem="9482425c-f171-4a19-87b8-fd96198fb6fa" secondAttribute="height" priority="500" constant="-10" id="e74328cc-e5be-40fd-8ebb-aa97662d4db1"/>
+                            <constraint firstAttribute="trailing" secondItem="7522a8d1-a3ea-415f-a0cd-ec401f8a00a8" secondAttribute="trailing" priority="900" id="0a7ba70e-b0e9-42b9-bf92-79fdf539c896"/>
+                            <constraint firstAttribute="bottom" secondItem="bd22480d-b2a7-4822-b637-52e7939e4968" secondAttribute="bottom" priority="900" id="770ec6c3-5e27-4c44-8151-4531a7cccdb4"/>
+                            <constraint firstItem="7522a8d1-a3ea-415f-a0cd-ec401f8a00a8" firstAttribute="width" secondItem="bd22480d-b2a7-4822-b637-52e7939e4968" secondAttribute="width" priority="500" constant="-10" id="8ca9bfba-6db7-49fb-a36a-4450f725573e"/>
+                            <constraint firstAttribute="trailing" secondItem="bd22480d-b2a7-4822-b637-52e7939e4968" secondAttribute="trailing" priority="900" id="acefeb8d-0ed4-4fc9-b959-df7d83f3bc69"/>
+                            <constraint firstItem="7522a8d1-a3ea-415f-a0cd-ec401f8a00a8" firstAttribute="height" secondItem="bd22480d-b2a7-4822-b637-52e7939e4968" secondAttribute="height" priority="500" constant="-10" id="be9b2621-5eda-487e-be63-226f7c78b4c0"/>
+                            <constraint firstItem="7522a8d1-a3ea-415f-a0cd-ec401f8a00a8" firstAttribute="bottom" secondItem="bd22480d-b2a7-4822-b637-52e7939e4968" secondAttribute="top" priority="950" id="d62f8745-2f58-4326-b3de-a7a771ffabd3"/>
+                            <constraint firstItem="7522a8d1-a3ea-415f-a0cd-ec401f8a00a8" firstAttribute="top" secondItem="85a40ddd-ca1e-4d59-bed1-6509c8594acc" secondAttribute="top" priority="950" constant="10" id="e0c47af8-89ab-4284-bc70-8c32d7598304"/>
+                            <constraint firstItem="7522a8d1-a3ea-415f-a0cd-ec401f8a00a8" firstAttribute="leading" secondItem="85a40ddd-ca1e-4d59-bed1-6509c8594acc" secondAttribute="leading" priority="950" constant="10" id="e4ac06f9-2338-479e-8cf0-36818e3f098b"/>
+                            <constraint firstItem="bd22480d-b2a7-4822-b637-52e7939e4968" firstAttribute="leading" secondItem="85a40ddd-ca1e-4d59-bed1-6509c8594acc" secondAttribute="leading" priority="950" id="f745afc3-14d0-409a-a80a-dd6f4f3c72ee"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="helloButton" destination="9482425c-f171-4a19-87b8-fd96198fb6fa" id="5f2607a7-29ab-489a-883f-4d08f92942cf"/>
-                        <outlet property="statusText" destination="b328a019-e3c0-4e18-9b6c-819d0b1e2ed9" id="8efa6f36-d304-44b1-914d-6664447ba8b2"/>
+                        <outlet property="helloButton" destination="bd22480d-b2a7-4822-b637-52e7939e4968" id="44de26e2-3966-4202-bb48-22a4f486cfa6"/>
+                        <outlet property="statusText" destination="7522a8d1-a3ea-415f-a0cd-ec401f8a00a8" id="13472b30-c5e7-46d4-bcb7-7b6c74a18322"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="35ab4fdf-6ad2-46db-a02a-a34f3a6a53fc" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98c9c35a-a072-42d4-807c-e7e1043b17d0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="181.33333333333334" y="395.70666666666665"/>
         </scene>
